@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * main -function that takes a pointer to an as parameter and updates the value
@@ -9,6 +9,6 @@
 void reset_to_98(int *n)
 {
 
-	*n = 98;
+	int *n = 98;
 
 }

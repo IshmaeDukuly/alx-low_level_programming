@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - function that takes a pointer to an int as parameter and updates the value
+ * main - function that takes a pointer to an int as parameter and updates  value
  *
  * Return: Aways 0.
  */

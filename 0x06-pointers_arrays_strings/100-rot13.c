@@ -1,26 +1,28 @@
 #include "main.h"
 /**
- * _strcat - concatenates two strings,
- * @dest: destination.
- * @src: source.
+ * rot13 - encodes a string using rot13
+ * @s: input string.
  * Return: the pointer to dest.
  */
-char *_strcat(char *dest, char *src)
+
+char *rot13(char *s)
 {
-	int count = 0, count2 = 0;
+	int count = 0, i;
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	while (*(dest + count) != '\0')
+	while (*(s + count) != '\0')
 	{
+		for (i = 0; i < 52; i++)
+		{
+			if (*(s + count) == alphabet[i])
+			{
+				*(s + count) = rot13[i];
+				break;
+			}
+		}
 		count++;
 	}
 
-	while (count2 >= 0)
-	{
-		*(dest + count) = *(src + count2);
-		if (*(src + count2) == '\0')
-			break;
-		count++;
-		count2++;
-	}
-	return (dest);
+	return (s);
 }

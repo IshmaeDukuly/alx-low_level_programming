@@ -2,8 +2,8 @@
 
 /**
  * 101-print_number - Print an integer
- * @n: Integer
- *Return: Always 0 (success)
+ *@n: Integer
+ *Return: Pointers
  */
 
 void print_number(int n)

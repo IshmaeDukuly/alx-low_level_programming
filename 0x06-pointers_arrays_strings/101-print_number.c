@@ -1,17 +1,35 @@
 #include "main.h"
 
 /**
- * 101-print_number - Print an integer
- *@n: Integer
- *Return: Pointers
+ * print_number - prints an integer.
+ * @n: input integer.
+ * Return: no return.
  */
-
-char *rot13(int n)
+void print_number(int n)
 {
-	int n = 10;
+	unsigned int m, d, count;
 
-	_putchar("%d\n", n);
+	if (n < 0)
+	{
+		_putchar(45);
+		m = n * -1;
+	}
+	else
+	{
+		m = n;
+	}
 
-	return (0);
+	d = m;
+	count = 1;
 
+	while (d > 9)
+	{
+		d /= 10;
+		count *= 10;
+	}
+
+	for (; count >= 1; count /= 10)
+	{
+		_putchar(((m / count) % 10) + 48);
+	}
 }

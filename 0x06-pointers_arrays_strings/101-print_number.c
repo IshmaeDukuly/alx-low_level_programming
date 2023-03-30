@@ -6,7 +6,7 @@
  *Return: Pointers
  */
 
-void print_number(int n)
+char *rot13(int n)
 {
 	int n = 10;
 

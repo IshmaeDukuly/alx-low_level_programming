@@ -2,8 +2,9 @@
 #include <string.h>
 #include <stdio.h>
 /**
- *strch - Locates a character in a string
- *
+ *_strchr - Locates a character in a string
+ *@s: Pointer to the char
+ *@c: char
  *Return: String
  */
 

@@ -7,16 +7,19 @@
  *Return: String
  */
 
-char *_strchr(char *S, char c)
+char *_strchr(char *s, char c)
 {
-	char name[]= "Moisema";
-	
-		if (strchr(name, 's'))
+	while (*s != '\0')
+	{
+		if (*s == c)
 		{
-			printf("character is there\n");
-		}else {
-	
-			printf("there is no character\n");	
-		}	
-	return (0);
+			return (s);
+		}
+		s++;
+	}
+	if (*s == c)
+	{
+		return (s);
+	}
+return (0);
 }

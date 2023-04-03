@@ -1,7 +1,8 @@
 #include "main.h"
 #include <string.h>
 
-/** _memset - Function that fills memory with a constant byte
+/**
+ * memset - Function that fills memory with a constant byte
  *
  *@memset: Memory byte
  */
@@ -17,3 +18,4 @@ char *_memset(char *s, char b, unsigned int n)
 	}
 	return (s);
 }
+	

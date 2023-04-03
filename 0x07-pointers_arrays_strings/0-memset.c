@@ -2,9 +2,11 @@
 #include <string.h>
 
 /**
- * memset - Function that fills memory with a constant byte
- *
- *@memset: Memory byte
+ *_memset -  Function that fills memory with a constant byte
+ *@n: fills first n
+ *@s: pointed
+ *@b: constant byte b
+ *Return: *S
  */
 
 
@@ -18,4 +20,4 @@ char *_memset(char *s, char b, unsigned int n)
 	}
 	return (s);
 }
-	
+

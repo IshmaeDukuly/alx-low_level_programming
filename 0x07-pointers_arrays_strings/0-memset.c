@@ -7,18 +7,13 @@
  */
 
 
-char *_memset(char *s, char b, unsigned int in)
+char *_memset(char *s, char b, unsigned int n)
 {
-	char buffer[10];
-	memset(buffer, 'c, sizeof(char)* 10);
+	unsigned int i;
 
-	for (int i = 0; i < 10; i++)
+	for (i = 0; i < n; i++)
 	{
-		printf("%c", buffer[i]);
+		s[i] = b;
 	}
-
-
-
-	
-	return (0);
-}	
+	return (s);
+}

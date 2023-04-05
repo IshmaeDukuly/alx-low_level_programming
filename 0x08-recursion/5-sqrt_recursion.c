@@ -1,18 +1,6 @@
 #include "main.h"
 
 
-/**
- *int _sqrt_recursion(int n) - Return sqaure root of a number
- *@n: interger
- *Return: int
- */
-
-int _sqrt_recursion(int n)
-{
-	return (_sqrt(n, 1));
-}
-
-
 
 /**_sqrt _recursion
  * @n: integer

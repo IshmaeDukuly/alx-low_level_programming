@@ -1,5 +1,5 @@
 #include "main.h"
-#include <string.h>
+
 
 /**
  *_puts_reursion - Output a string

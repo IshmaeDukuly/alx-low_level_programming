@@ -4,7 +4,7 @@
  * int _pow_recursion(int x, int y) - Return the of x
  * @x: value of x
  * @y: Power of y
- * Reurn: Always 1 (success)
+ * Reurn: Recursion
  */
 
 int _pow_recursion(int x, int y)

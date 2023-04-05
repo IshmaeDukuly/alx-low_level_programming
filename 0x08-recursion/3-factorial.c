@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_int factorial - Factorize  of a given number
+ *int factorial(int n) - returns  of a given number
  *@n: is lower than
  *Return: Factorial
  */

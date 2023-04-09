@@ -4,27 +4,28 @@
  * _strstr - The _strstr() this finds the appearence of the substring
  * @haystack: string
  * @needle: The appearance of string search in haystack
- * *Return: substring
+ * Return: Always Success
  */
 
-unsigned int _strspn(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
-	unsigned int bytes = 0;
-	int y;
+	int x;
 
-	while (*s)
+	if (*needle == 0)
+		return (haystack);
+
+	while (*haystack)
 	{
-		for (y = 0; accept[y]; y++)
+		x = 0;
+
+		if (haystack[x] == needle[x])
 		{
-			if (accept[y] == *s)
-			{
-				bytes++;
-				break;
-			}
-			else if ((accept[y + 1]) == '\0')
-				return (bytes);
+			do {
+				if (needle[x + 1] == '\0')
+					return (haystack);
+				x++;
+			} while (haystack[x] == needle[x]);
 		}
-		s++;
+		haystack++;
 	}
-	return (bytes);
-}
+	return ('\0');

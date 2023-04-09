@@ -2,9 +2,10 @@
 
 
 /**
- * _strcmp - This functions compare two strngs
+ * _strcmp - strcmp() this functions compare two strngs
  * @s1: first string
  * @s2: the second string
+ * Return: Success
  */
 
 

@@ -3,9 +3,9 @@
 /**
  * _strbrk - the strbrk() function loactes the first string
  * occurence in any of the bytes
- * @s: string 
+ * @s: string
  * @accept: Search bytes location
- * Return: Pointer 
+ * Return: Pointer
  */
 
 
@@ -13,7 +13,7 @@ char *_strbrk(char *s, char *accept)
 {
 	int y;
 
-	while(*s)
+	while (*s)
 	{
 		for (y = 0; accept[y]; y++)
 		{
@@ -22,6 +22,6 @@ char *_strbrk(char *s, char *accept)
 				return (s);
 		}
 	}
-	
+
 	return ('\0');
 }

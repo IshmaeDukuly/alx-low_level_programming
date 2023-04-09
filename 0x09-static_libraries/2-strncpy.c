@@ -5,7 +5,7 @@
  * @dest: storing the string copy
  * @src: This is the source of the sting
  * @n: theis shows the maximum number to be copied
- * @Return: returns dest
+ * Return: returns dest
  */
 
 char *_strncpy(char *dest, char *src, int n)

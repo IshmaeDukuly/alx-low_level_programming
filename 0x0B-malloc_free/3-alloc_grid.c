@@ -2,17 +2,17 @@
 #include <stdlib.h>
 
 /**
- * 3-alloc_grid.c - A function that returns to a dimensional array
+ * **alloc_grid - function that returns to a dimensional array
  * @width: The integer
  * @height: Height of an integer
- * Return: 0 Success
+ * Return: NULL
  */
 
 
 int **alloc_grid(int width, int height)
 {
-	int a;
 	int b;
+	int a;
 	int **grid = (int **) malloc(height * sizeof(int *));
 
 	if (width <= 0 || height <= 0)
@@ -23,24 +23,23 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
-	for (a = 0; a < height; a++)
+	for (b = 0; b < height; b++)
+	{
+		grid[b] = (int *) malloc(width * sizeof(int));
 
-		 grid[a] = (int *) malloc(width * sizeof(int));
-
-		if (grid[a] == NULL)
-
-			for (b = 0; b < a; b++)
-
-				free(grid[b]);
-
-
+		if (grid[b] == NULL)
+		{
+			for (a = 0; a < b; a++)
+			{
+				free(grid[a]);
+			}
 			free(grid);
 			return (NULL);
-
-	for (b = 0; b < width; b++)
-
-			 grid[a][b] = 0;
-
-
+		}
+		for (a = 0; a < width; a++)
+		{
+			grid[b][a] = 0;
+		}
+	}
 	return (grid);
 }

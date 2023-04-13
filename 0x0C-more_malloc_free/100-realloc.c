@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * _realloc - memory block using malloc and free
+ * realloc - memory block using malloc and free
  * @ptr: point to passed memory
  * @old_size: size of an array
  * @new_size: new memor array size

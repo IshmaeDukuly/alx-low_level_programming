@@ -2,20 +2,10 @@
 
 /**
  * array - the function
- * @min: the minimum 
- * @max: the maximum 
+ * @min: the minimum
+ * @max: the maximum
  * Return: return a pointer
  */
-
-
-
-
-
-
-
-
-
-
 
 int *array_range(int min, int max)
 {

@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * realloc - memory block using malloc and free
+ * _realloc - memory block using malloc and free
  * @ptr: point to passed memory
  * @old_size: size of an array
  * @new_size: new memor array size
- * Return: Success
+ * Return: Success 1
  */
 
 

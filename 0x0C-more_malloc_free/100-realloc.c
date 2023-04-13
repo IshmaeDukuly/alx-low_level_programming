@@ -6,7 +6,9 @@
  * @ptr: point to passed memory
  * @old_size: size of an array
  * @new_size: new memor array size
+ * Return: Success
  */
+
 
 
 

@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 /**
- * malloc-checked - Memory alllocation using malloc
+ * malloc_checked - Memory alllocation using malloc
  * @b: bytes amount
  * Return: Point to the new allocated memory
  */

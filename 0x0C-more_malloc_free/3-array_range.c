@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * array - the function
+ * array_range - the function
  * @min: the minimum
  * @max: the maximum
  * Return: return a pointer

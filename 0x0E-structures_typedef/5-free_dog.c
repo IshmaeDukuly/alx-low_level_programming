@@ -1,15 +1,20 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include "dog.h"
+
 /**
- * main - the main funtion
+ * free_dog - free the struct pointer
  *
- * Return: Always 0 (Success)
+ * @d: point to free
+ *
+ * Return: Awlays 0 (Success)
  */
-int main(void)
+
+void free_dog(dog_t *d)
 {
-dog_t *my_dog;
-my_dog = new_dog("Poppy", 3.5, "Bob");
-printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog->name, my_dog->age);
-free_dog(my_dog);
-return (0);
+	if (d)
+	{
+		free(d->name);
+		free(d->owner);
+		free(d);
+	}
 }

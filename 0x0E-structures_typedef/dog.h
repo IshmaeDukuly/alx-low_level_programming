@@ -1,8 +1,8 @@
-#ifndef DOG_h_
-#define DOG_h_
+#ifndef DOG_H_
+#define DOG_H_
 
 /**
- * struct dog - this is the type
+ * struct dog - The structure of the dog
  * @name: string datape type
  * @age: int datatype
  * @owner: string datatype
@@ -16,7 +16,7 @@ struct dog
 
 };
 
-
+/*free_dog*/
 
 typedef struct dog dog_t;
 
@@ -27,4 +27,4 @@ void free_dog(dog_t *d)
 
 
 
-#endif
+#endif 

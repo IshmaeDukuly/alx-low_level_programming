@@ -4,10 +4,10 @@
 /**
  * main - prints the opcodes
  * @argc: arguments counts
- * @argv:  arguments vector
- *
+ * @argv: arguments vector
  * Return: Always 0 (Success)
  */
+
 int main(int argc, char *argv[])
 {
 	int bytes, x;
@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 
 	for (x = 0; x < bytes; x++)
 	{
-		if (i == bytes - 1)
+		if (x == bytes - 1)
 		{
 			printf("%02hhx\n", arr[x]);
 			break;

@@ -36,15 +36,4 @@ int main(void)
     array_iterator(array, 5, &print_elem_hex);
     return (0);
 }
-julien@ubuntu:~/0x0e. Function pointers$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-array_iterator.c -o b
-julien@ubuntu:~/0x0e. Function pointers$ ./b 
-0
-98
-402
-1024
-4096
-0x0
-0x62
-0x192
-0x400
-0x1000
+

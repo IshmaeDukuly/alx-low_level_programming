@@ -1,13 +1,11 @@
 #include "lists.h"
 
-
 /**
  * find_listint_loop - loops through
  * and find the linked
  * @head: the linked_list head
  * Return: Always return the node address
  */
-
 listint_t *find_listint_loop(listint_t *head)
 {
 	listint_t *first = head;

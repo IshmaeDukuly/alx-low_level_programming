@@ -2,25 +2,26 @@
 #include <stdio.h>
 
 /**
- * clear_bit -  value of the function
- * @n: this is the pointer to decimal
+ * clear_bit -The function  value
+ * @n: this points to the decimal
  * @index: index
- * Return: Either 1 as success or error
+ * Return: Either return 1 as successs
+ * or -1 as error
  */
 
 int clear_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned long int x;
-	unsigned int value;
+	unsigned int mask;
 
 	if (index > 64)
 		return (-1);
-	value = index;
-	for (x = 1; value > 0; x *= 2, value--)
+	mask = index;
+	for (x = 1; mask > 0; x *= 2, mask--)
 		;
 
 	if ((*n >> index) & 1)
-		*n -= value;
+		*n -= x;
 
 	return (1);
 }

@@ -1,7 +1,8 @@
 #include "lists.h"
 
 /**
- * delete_ndoeint_at_index - deletes node
+ * delete_dnodeint_at_index - deletes node
+ * of dlistint_t linked list
  * @head: the list head
  * @index: index of the new node
  * Return: if it is suecceded, return 1 or -1

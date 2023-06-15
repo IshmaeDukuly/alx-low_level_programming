@@ -10,8 +10,8 @@
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 
-	dlistint_t *h3
-	dlistint_t *h4
+	dlistint_t *h3;
+	dlistint_t *h4;
 	unsigned int y;
 
 	h3 = *head;
@@ -30,7 +30,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 			{
 				*head = h3->next;
 				if (*head != NULL)
-					(*head->prev = NULL;
+					(*head)->prev = NULL;
 			}
 			else
 			{

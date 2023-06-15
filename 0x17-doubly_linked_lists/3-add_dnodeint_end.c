@@ -1,35 +1,39 @@
 #include "lists.h"
 #include <stdlib.h>
+/** Author: Ishamel Dukuly */
 /**
  * add_dnodeint_end - prototype of function
  * @head: the node data
+ * @n: elemetsvalue
  * Return: Always the address of node
  */
-dlistint_t *add_adnodeint_end(dlistint_t **head, const int n)
+dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 
-	dlistint_t *recent;
-	dlistint_t *end;
-	if (!head)
-	return (NULL);
-	recent = malloc(sizeof(struct dlistint_s));
-	if (!recent)
-	return (NULL);
-	recent->n = n;
-	if (*head == NULL)
+	dlistint_t *h;
+	dlistint_t  *my_new;
+
+	my_new = malloc(sizeof(dlistint_t));
+	if (my_new == NULL)
+		return (NULL);
+
+	my_new->n = n;
+	my_new->next = NULL;
+
+	h = *head;
+
+	if (h != NULL)
 	{
-	*head = recent;
-	recent->next = NULL;
-	recent->prev = NULL;
-	return (recent);
+
+		while (h->next != NULL)
+			h = h->next;
+		h->next = my_new;
 	}
-	end = *head;
-	while (end->recent != NULL)
+	else
 	{
-	end = end->next;
-	recent->next = NULL
-	recent->prev = end;
-	end->next = recent;
-	return (recent);
+		*head = my_new;
 	}
+	my_new->prev = h;
+
+	return (my_new);
 }

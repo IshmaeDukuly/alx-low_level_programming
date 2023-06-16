@@ -1,6 +1,5 @@
 #include "lists.h"
 #include <stdlib.h>
-/** Author: Ishamel Dukuly */
 /**
  * add_dnodeint_end - prototype of function
  * @head: the node data

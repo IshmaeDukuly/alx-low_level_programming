@@ -10,7 +10,7 @@
  * @n: Node value
  * Return: THE ADDRESS
  */
-dlistint_t *insert_nodeint_at_index(dlistint_t **h, unsigned int idx, int n)
+dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *new, *next, *current;
 	unsigned int y;

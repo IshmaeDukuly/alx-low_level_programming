@@ -1,0 +1,13 @@
+import ctypes
+
+lib = ctypes.CDLL('./100-operations.so')
+
+lib.add.argtypes = (ctypes.c_int, ctypes.c_int)
+lib.add.restype = ctypes.c_int
+
+outcome = lib.add(5, 4)
+print("outcome of the add function:", outcome)
+
+lib.greet.argtypes = (ctypes.c_char_p,)
+
+lib.greet(b"Ishmael")

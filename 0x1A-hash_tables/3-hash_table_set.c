@@ -24,7 +24,7 @@ int create_and_add_node(hash_table_t *ht, const char *key, const char *value,
 	{
 
 		free(node1);
-		return (0):
+		return (0);
 	}
 
 	n = strdup(value);
@@ -42,10 +42,10 @@ int create_and_add_node(hash_table_t *ht, const char *key, const char *value,
 
 
 	if ((ht->array)[idx] == NULL)
-		node-> = NULL;
+		node1-> = NULL;
 	else
 		node1->next = (ht->array)[idx];
-	(ht->array)[idx] = node1
+	(ht->array)[idx] = node1;
 
 	return (1);
 }
@@ -55,22 +55,3 @@ int create_and_add_node(hash_table_t *ht, const char *key, const char *value,
  * @ht: the hash table
  * @key: not empty
  * @value: the value
- * Return: Always 1
- */
-int hash_table_set(hash_table_t *ht, const char *key, const char *value)
-{
-
-	unsigned long int idx;
-	hash_node_t *node1 = NULL;
-	char *n;
-
-	if (!ht || !(ht->array) || !key || strlen(key) == 0 || !value)
-		return (0);
-
-	idx = key_index((const unsigned char *)key, ht->size);
-
-	node1 = (ht->array)[idx];
-	while (node1 && (strcmp(key, node1->key) != 0))
-		node1 =
-
-}
